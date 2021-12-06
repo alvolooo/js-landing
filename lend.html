@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знакомство с JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="js.png" class="logo">
+        <!--модальные окна-->
+
+        <div id="change_name" class="menu_part">
+            Поменять имя пользователя
+        </div>
+        <div id="modal1" class="modal">
+            
+            <div class="modal_content">
+                <div class="foundation">
+                    <div class="name_title">
+                        Введите свое имя: 
+                    </div>
+                    <form>
+                        <input type="text" class="name_input" id="name_input" required >
+                        <input type="submit" class="button" id="name_button" value="готово!">  
+                    </form>
+                    
+                </div>
+
+                <div class="description">
+                    <p class="desc_title">Методы, использованные для решения задачи:</p>
+                    <p class="desc_text">◼ document.getElementById('...') — Возвращает ссылку на элемент по его идентификатору (ID)
+                        <br>
+                        ◼ .onclick — Событие onclick возникает при щелчке левой кнопкой мыши на элементе, к которому добавлен атрибут onclick.
+                        <br>
+                        ◼  localStorage — Свойство localStorage позволяет получить доступ к Storage объекту.Сохраненные данные не имеют ограничений по времени хранения и могут быть удалены только с помощью JavaScript.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="triangle" class="menu_part">
+            Площадь треугольника
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal_content">
+                <div class="condition">
+                    <div class="foundation">
+                        <p id="area_text">Введите длину основания и высоты треугольника, чтобы узнать его площадь</p>
+                        <div id="block">
+                        <p id="t">Основание: </p>
+                        <input type="text" class="area_input" id="osn">
+                        </div>
+                        <div id="block">
+                        <p id="t">Высота: </p>
+                        <input type="text" class="area_input" id="visota">
+                        </div>
+                    </div>
+                    <div id="res_block">
+                        <button id="area_button" class="button">посчитать</button>
+                        <span id="area_res"></span>
+                    </div>
+                    <div class="description">
+                        <p class="desc_title">
+                            Методы, использованные для решения задачи:
+                        </p>
+                        <p class="desc_text">
+                            ◼ if...else — Инструкция if выполняет инструкцию, если указанное условие выполняется (истинно). Если условие не выполняется (ложно), то может быть выполнена другая инструкция.
+                            <br>
+                            ◼ document.getElementById('...') — Возвращает ссылку на элемент по его идентификатору (ID)
+                            <br>
+                            ◼ .onclick — Событие onclick возникает при щелчке левой кнопкой мыши на элементе, к которому добавлен атрибут onclick.
+                            
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <div id="mas" class="menu_part">
+            Мин и макси 
+        </div>
+
+        <div class="modal" id="modal3">
+            <div class="modal_content">
+                <div class="condition">
+                    <div class="foundation">
+                        <p class="mas_text">
+                            Введите пять элементов массива:
+                        </p>
+                        <input type="text" class="mas_input" id="mas_input1">
+                        <input type="text" class="mas_input" id="mas_input2">
+                        <input type="text" class="mas_input" id="mas_input3">
+                        <input type="text" class="mas_input" id="mas_input4">
+                        <input type="text" class="mas_input" id="mas_input5">
+                    </div>
+
+                    <div id="mas_res">
+                        <button class="button" id="mas_btn">готово</button>
+                        <span id="max"></span>
+                        <span id="min"></span>
+                    </div>
+
+                    <div class="description">
+                        <p class="desc_title">
+                            Методы, использованные для решения задачи:
+                        </p>
+                        <p class="desc_text">
+                            ◼ for — Выражение for создаёт цикл, состоящий из 3 необязательных выражений в круглых скобках, разделённых точками с запятой.
+                            <br>
+                            ◼ document.getElementById('...') — Возвращает ссылку на элемент по его идентификатору (ID)
+                            <br>
+                            ◼ .onclick — Событие onclick возникает при щелчке левой кнопкой мыши на элементе, к которому добавлен атрибут onclick.
+                            
+                        </p>
+                    </div>      
+                </div>
+            </div>
+        </div>
+
+        <div id="str" class="menu_part">
+            Сравни строки
+        </div>
+
+        <div class="modal" id="modal7">
+            <div class="modal_content">
+                <div class="condition">
+                    <div class="foundation">
+                        <p class="mas_text">
+                            Введите строки:
+                        </p>
+                        <div class="inputs">
+                            <input type="text" class="str_input" id="str_input1">
+                            <input type="text" class="str_input" id="str_input2">
+                        </div>
+                        
+                    </div>
+
+                    <div id="str_res">
+                        <button class="button" id="str_btn">готово</button>
+                        <span id="str_reszone"></span>
+                        
+                    </div>
+
+                    <div class="description">
+                        <p class="desc_title">
+                            Методы, использованные для решения задачи:
+                        </p>
+                        <p class="desc_text">
+                            ◼ for — Выражение for создаёт цикл, состоящий из 3 необязательных выражений в круглых скобках, разделённых точками с запятой.
+                            <br>
+                            ◼ document.getElementById('...') — Возвращает ссылку на элемент по его идентификатору (ID)
+                            <br>
+                            ◼ .onclick — Событие onclick возникает при щелчке левой кнопкой мыши на элементе, к которому добавлен атрибут onclick.
+                            
+                        </p>
+                    </div>      
+                </div>
+            </div>
+        </div>
+
+        <div id="timer" class="menu_part">
+            Таймер
+        </div>
+
+        <div class="modal" id="modal4">
+            <div class="modal_content">
+                <div class="condition">
+                    <div class="foundation">
+                        <span id="timer_text"> 00:00:00</span>
+                    </div>
+
+                    <div id="timer_res">
+                        <button class="button" id="start_btn">Старт</button>
+                        <button class="button" id="stop_btn">Стоп</button>
+                        <button class="button" id="restart_btn">Обнулить</button>
+                        <span id="max"></span>
+                    </div>
+
+                    <div class="description">
+                        <p class="desc_title">
+                            Методы, использованные для решения задачи:
+                        </p>
+                        <p class="desc_text">
+                            ◼ setInterval() — Функция setInterval производит выполнение кода через указанный интервал времени.
+                            <br>
+                            ◼ clearTimeout() — Отменяет выполнение кода.
+                            <br>
+                            ◼ .onclick — Событие onclick возникает при щелчке левой кнопкой мыши на элементе, к которому добавлен атрибут onclick.
+                            
+                        </p>
+                    </div>      
+                </div>
+            </div>
+        </div>
+
+        <div id="test" class="menu_part">
+            Тест
+        </div>
+
+        <div class="modal" id="modal5">
+            <div class="modal_content">
+                <div class="condition">
+                    <div class="foundation">
+                        <form id="test">
+                            Для чего используется оператор "&&"?<br>
+                            <input type="radio" name="que1" value="i" required>
+                            <label>Это оператор логического "и"</label> <br>
+                            <input type="radio" name="que1" value="ili">
+                            <label>Это оператор логического "или"</label><br>
+                            <input type="radio" name="que1" value="ne">
+                            <label>Это оператор логического "не"</label> <br>
+                            <span class="q_res" id="q1_r"></span>
+                            <br>
+            
+                            Сколько будет 1101+1111?<br>
+                            <input type="radio" name="que2" value="11111" required>
+                            <label>11111</label> <br>
+                            <input type="radio" name="que2" value="11011">
+                            <label>11011</label><br>
+                            <input type="radio" name="que2" value="11100">
+                            <label>11100</label> <br> 
+                            <span class="q_res" id="q2_r"></span>
+                            <br>
+            
+                            Что означает событие 'click'?<br>
+                            <input type="radio" name="que3" value="space" required>
+                            <label>Щелчок на пробел</label> <br>
+                            <input type="radio" name="que3" value="esc">
+                            <label>Щелчок на ESC</label><br>
+                            <input type="radio" name="que3" value="pkm">
+                            <label>Щелчок на пкм</label> <br>
+                            <span class="q_res" id="q3_r"></span>
+                            <br>
+            
+                            Что используют для создание строки для ввода??<br>
+                            <input type="radio" name="que4" value="lab" required>
+                            <label>label</label> <br>
+                            <input type="radio" name="que4" value="inp">
+                            <label>input</label><br>
+                            <input type="radio" name="que4" value="p">
+                            <label>p</label><br>
+                            <span class="q_res" id="q4_r"></span>
+                            <br>
+            
+                            Какой type input использован для создания этого теста??<br>
+                            <input type="radio" name="que5" value="num" required>
+                            <label>number</label> <br>
+                            <input type="radio" name="que5" value="rad">
+                            <label>radio</label><br>
+                            <input type="radio" name="que5" value="text">
+                            <label>text</label><br>
+                            <span class="q_res" id="q5_r"></span>
+            
+                            <div id="test_res">
+                                <input type="button" class="button" id="test_btn" value="Проверить">
+                        
+                                <span id="test_reszone"></span>
+                            </div>                            
+                        </form>
+                    </div>
+
+                    
+
+                    <div class="description">
+                        <p class="desc_title">
+                            Методы, использованные для решения задачи:
+                        </p>
+                        <p class="desc_text">
+                            ◼ forEach() — Метод forEach() выполняет указанную функцию один раз для каждого элемента в массиве.
+                            <br>
+                            ◼ HTMLElement.style — Свойство HTMLElement.style используется для получения и установки инлайновых стилей.
+                            <br>
+                            ◼ .onclick — Событие onclick возникает при щелчке левой кнопкой мыши на элементе, к которому добавлен атрибут onclick.
+                            
+                        </p>
+                    </div>      
+                </div>
+            </div>
+        </div>
+
+        <div class="relax" id="relax">
+            <img src="clock.png" class="img_relax">
+        </div>
+
+        <div class="modal" id="modal6">
+            <div class="modal_content_rel" id="modal_content_rel">
+                <div class="date" id="date"></div>
+                <div class="user" id="user"></div>
+            </div>
+        </div>
+
+        <div id="name">
+            <span id="name_text"> guest </span>
+        </div>
+
+        
+    </header>
+
+    <main>
+        
+        <div class="greet_cont">
+            <div class="greeting" id="greeting">
+                Привет! Прямо сейчас начнется твоё знакомство с JavaScript.  Добро пожаловать! 
+            </div>
+            <div class="about">
+                <div class="about_1">
+                    <div class="about_1_title">
+                        Что такое JavaScript и с чем его едят?
+                    </div>
+                    <div class="about_1_text">
+                        JavaScript - язык программирования. Большое применение нашел при разработке динамических веб-сайтов с интерактивностью на стороне клиента (браузера). Настолько широко распространен, что если отключить поддержку этой технологии, многие сайты перестанут нормально работать.
+                    </div>
+                </div>
+
+                <div class="about_1">
+                    <div class="about_1_title">
+                        Для чего он тебе?
+                    </div>
+                    <div class="about_1_text">
+                        Чаще всего к JS прибегают, когда нужно добавить динамичности на сайт или сделать браузерное приложение, но при желании на нём можно написать и бэкенд.
+                        С помощью кода на JavaScript программист определяет, как страница отреагирует на действия пользователя. Любое действие пользователя на странице порождает событие. Программирование на JavaScript — это обработка событий. 
+                    </div>
+                </div>
+
+                <div class="about_1">
+                    <div class="about_1_title">
+                        Чем хорош JavaScript?
+                    </div>
+                    <div class="about_1_text">
+                        JavaScript полностью интегрирован с HTML, он способен как угодно менять веб-страницу. В ответ на событие программист может: <br>
+                        ◎на лету вставить в HTML-код любые теги; <br>
+
+                        ◎задать внешний вид элементов через класс и атрибуты HTML; <br>
+
+                        ◎переместить любой элемент;
+
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>        
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
